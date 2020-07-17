@@ -4,11 +4,11 @@
  - https://powerful-stream-10591.herokuapp.com/
 
 # Para acessar localmente:
- Acesse a pasta frontend e execute o comando:
+ Acesse a pasta frontend e execute os comandos:
 ### npm install
 ### npm start
 
- Abra outro terminal, acesse a pasta backend e execute o comando:
+ Abra outro terminal, acesse a pasta backend e execute os comandos:
 ### npm install
 ### node index.js
 
