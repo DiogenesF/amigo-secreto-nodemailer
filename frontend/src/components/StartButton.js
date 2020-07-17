@@ -3,12 +3,20 @@ import axios from "axios";
 
 const StartButton = ({ pessoas }) => {
   const [messageSuccess, setMessageSuccess] = useState("");
+  const [messageError, setMessageError] = useState("");
+
   let sorteio = JSON.parse(JSON.stringify(pessoas));
   const handleClick = async () => {
     if (pessoas.length === 0) {
-      console.log("Nenhum participante");
+      setMessageError("Nenhum participante cadastrado");
+      setTimeout(() => {
+        setMessageError("");
+      }, 3000);
     } else if (pessoas.length === 1) {
-      console.log("Apenas um participante");
+      setMessageError("So existe um participante, cadastre mais pessoas..");
+      setTimeout(() => {
+        setMessageError("");
+      }, 3000);
     } else {
       let i = 0;
       const numbersOut = [];
@@ -23,14 +31,14 @@ const StartButton = ({ pessoas }) => {
         numbersOut.push(valor);
         i++;
       }
+      await axios.put("/pessoas/amigos", sorteio);
+      setMessageSuccess(
+        "O sorteio ja foi realizado, um email está sendo enviado aos participantes"
+      );
+      setTimeout(() => {
+        setMessageSuccess("");
+      }, 3000);
     }
-    await axios.put("http://localhost:5000/pessoas/amigos", sorteio);
-    setMessageSuccess(
-      "O sorteio ja foi realizado, um email está sendo enviado aos participantes"
-    );
-    setTimeout(() => {
-      setMessageSuccess("");
-    }, 3000);
   };
 
   return (
@@ -61,6 +69,20 @@ const StartButton = ({ pessoas }) => {
           }}
         >
           {messageSuccess}
+        </div>
+      ) : null}
+      {messageError.length > 0 ? (
+        <div
+          style={{
+            margin: "auto",
+            width: "60%",
+            padding: "10px",
+            textAlign: "center",
+            backgroundColor: "red",
+            color: "white",
+          }}
+        >
+          {messageError}
         </div>
       ) : null}
       <div style={{ textAlign: "center" }}></div>

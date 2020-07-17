@@ -37,7 +37,12 @@ const Table = ({ pessoas, setFlag, flag }) => {
         />
       ) : (
         <Fragment>
-          <h2 style={{ textAlign: "center" }}>Pessoas cadastradas</h2>
+          <h2 style={{ textAlign: "center" }}>Amigo secreto</h2>
+          <h3 style={{ textAlign: "center" }}>Pessoas cadastradas</h3>
+          <p style={{ textAlign: "center" }}>
+            Ao iniciar o sorteio, cada pessoa cadastrada vai receber em seu
+            email o amigo secreto que ela tirou
+          </p>
 
           <p style={{ textAlign: "center" }}>{loading ? "Aguarde..." : null}</p>
           <div style={{ display: "flex", justifyContent: "center" }}>
