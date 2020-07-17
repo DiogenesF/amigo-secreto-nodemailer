@@ -1,0 +1,8 @@
+//Esse arquivo nao deve em hipotese alguma ser disponibilizado
+//no github, visto que o mesmo tem as credencias de acesso ao
+//cluster do banco de dados.
+//Estou subindo esse arquivo apenas por que essa aplicação
+//é um teste.
+{
+  "mongoURI": "mongodb+srv://admin:admin@ad-2019.rzekj.mongodb.net/<dbname>?retryWrites=true&w=majority"
+}
