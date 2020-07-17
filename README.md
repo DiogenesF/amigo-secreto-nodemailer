@@ -1,4 +1,9 @@
 # ad-2019
+# Para acessar em produção: (O envio de emails em produção está funcionando)
+
+ - https://powerful-stream-10591.herokuapp.com/
+
+# Para acessar localmente:
  Acesse a pasta frontend e execute o comando:
 ### npm start
 
