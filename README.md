@@ -5,9 +5,11 @@
 
 # Para acessar localmente:
  Acesse a pasta frontend e execute o comando:
+### npm install
 ### npm start
 
  Abra outro terminal, acesse a pasta backend e execute o comando:
+### npm install
 ### node index.js
 
  Após isso a aplicação será aberta no navegador
