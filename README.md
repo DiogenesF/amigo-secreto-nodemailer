@@ -1,6 +1,7 @@
 # Amigo secreto
 
-Aplicação em que você pode cadastrar pessoas para participar de um amigo secreto, ao realizar o sorteio, a pessoa receberá no email cadastrado o amigo secreto que ela tirou.
+Aplicação em que você pode cadastrar pessoas para participar de um amigo secreto e, ao realizar o sorteio, a pessoa receberá no email cadastrado o amigo secreto que ela tirou.
+Para o envio de emails foi utilizado o `Nodemailer`
 
 # Para acessar em produção: (O envio de emails em produção está funcionando)
 
