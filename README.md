@@ -1,16 +1,19 @@
-# ad-2019 - Amigo secreto
+# Amigo secreto
+
+Aplicação em que você pode cadastrar pessoas para participar de um amigo secreto, ao realizar o sorteio, a pessoa receberá no email cadastrado o amigo secreto que ela tirou.
+
 # Para acessar em produção: (O envio de emails em produção está funcionando)
 
- - https://powerful-stream-10591.herokuapp.com/
+ - https://amigo-secreto-online.herokuapp.com/
 
 # Para acessar localmente:
  Acesse a pasta frontend e execute os comandos:
-### npm install
-### npm start
+### `npm install`
+### `npm start`
 
  Abra outro terminal, acesse a pasta backend e execute os comandos:
-### npm install
-### node index.js
+### `npm install`
+### `node index.js`
 
  Após isso a aplicação será aberta no navegador
 
